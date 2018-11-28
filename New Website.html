@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Responsive Poetry Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Times New Roman, Courier, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #00F;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: auto; 
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+	
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<script>
+alert("Prepare to be cultured");
+</script>
+
+<h1>An HTML Website by Quinn Huckaba</h1>
+<p>Poetry is a beautiful thing.  Around the globe, it has long been the source of 
+growth and expression for all different types of cultures.  This website seeks to provide
+a taste of what poetry could sound like in India, the United States, France,
+Germany, and Russia.</p>
+<p><a title="Learn basic HTML" style="color:black" href="https://www.w3schools.com">Build a Similar Website </a></p>
+
+<header>
+  <h2>Poetry of the World</h2>
+</header>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'United States')">United States</button>
+  <button class="tablinks" onclick="openCity(event, 'France')">France</button>
+  <button class="tablinks" onclick="openCity(event, 'Germany')">Germany</button>
+  <button class="tablinks" onclick="openCity(event, 'Russia')">Russia</button>
+  <button class="tablinks" onclick="openCity(event, 'India')">India</button>
+</div>
+
+<img src="earth-11015_1280.jpg" alt="The Globe"style="width:600px;height:600px;">
+
+<div id="United States" class="tabcontent">
+<article>
+  <h4>The United States</h4>
+  <p>The post-World War II years produced an abundance of strong poetry but no individual poet as 
+  dominant and accomplished as T.S. Eliot, Ezra Pound, Wallace Stevens, Robert Frost, or William Carlos Williams, 
+  whose long careers were coming to an end. The major poetry from 1945 to 1960 was Modernist in its ironic texture yet formal 
+  in its insistence on regular rhyme and metre. Beginning in the late 1950s, however, there were a variety of poets and schools who 
+  rebelled against these constraints and experimented with more-open forms and more-colloquial styles.</p>
+</article>
+</div>
+
+<div id="France" class="tabcontent">
+<article> 
+  <h2>France</h2>
+  <p>The language of France lends itself elegantly to the art of poetry.  Not too
+  many consonants, and so many vowels that the rules of poetry themselves must sometimes
+  be bent to accomidate French.  France has a rich cultural history when it comes to poetry,
+  and although French poets have been known to be closed-minded towards poets of other countries,
+  the country's dominace of the art form cannot be denied.</p> 
+</article>  
+</div>
+
+<div id="Germany" class="tabcontent">
+<article>
+  <h3>Germany</h3>
+  <p> Germany did not become a modern nation-state until 1871, and the prior 
+  history of the various German states is marked by warfare, religious turmoil, 
+  and periods of economic decline. This fragmented development sets German poetry apart 
+  from the national poetries of France and England, for instance, which enjoyed uninterrupted brilliance 
+  from the Middle Ages to the modern era. Nevertheless, German literature has experienced three periods of 
+  established greatness: the high Middle Ages (c. 1160–c. 1230), the turn of the 18th to the 19th century (the “age of Goethe”),
+  and the turn of the 19th to the 20th century.</p>
+</article>
+</div>
+
+<div id="Russia" class="tabcontent">	
+<article>
+  <h5>Russia</h5>
+  <p>Catherine’s reign saw real accomplishment in Russian poetry. Excellent verse was 
+  produced, and the canon as it is known today began to take shape. It is worth stressing the
+  important role of tradition and the canon in Russian poetry. To a much greater extent than in 
+  many other traditions, including the English and American, Russian poetry typically relies on 
+  the reader’s detailed knowledge of earlier poems. The poems of the past constitute a sort of literary bible, a 
+  common culture known in detail by the literate public. Poets count on their readers being sufficiently familiar 
+  with the tradition to detect even faint allusions to earlier poems. Moreover, Russian poets also rely on readers to 
+  appreciate the semantic associations that specific verse forms have acquired, which is perhaps one reason why free 
+  (unrhymed and unmetered) verse has played a relatively small role in Russian poetry.</p>
+</article>	
+</div>
+
+<div id="India" class="tabcontent">
+<article>
+  <h1>India</h1>
+  <p>India is an ancient subcontinent which has been growing since civilization began.
+  There are now almost 1.3 billion people who live in the country, which houses some of the 
+  most colorful, stylized and fantastical art in the world.</p>
+  <p>Below is some of the best Indian Poetry ever written.</p>
+  </article>
+</div>
+
+<footer>
+	<h6>IT105 Summirative Presentation</h6>
+</footer>	
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+</body>
+</html>

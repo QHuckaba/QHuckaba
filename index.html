@@ -109,11 +109,12 @@ Germany, and Russia.</p>
 </header>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'United States')">United States</button>
-  <button class="tablinks" onclick="openCity(event, 'France')">France</button>
-  <button class="tablinks" onclick="openCity(event, 'Germany')">Germany</button>
-  <button class="tablinks" onclick="openCity(event, 'Russia')">Russia</button>
-  <button class="tablinks" onclick="openCity(event, 'India')">India</button>
+  <button class="tablinks" onclick="openTab(event, 'United States')">United States</button>
+  <button class="tablinks" onclick="openTab(event, 'France')">France</button>
+  <button class="tablinks" onclick="openTab(event, 'Germany')">Germany</button>
+  <button class="tablinks" onclick="openTab(event, 'Russia')">Russia</button>
+  <button class="tablinks" onclick="openTab(event, 'India')">India</button>
+  <button class="tablinks" onclick="openTab(event, 'Citations')">Citations</button>
 </div>
 
 <img src="earth-11015_1280.jpg" alt="The Globe"style="width:600px;height:600px;">
@@ -178,12 +179,43 @@ Germany, and Russia.</p>
   </article>
 </div>
 
+<div id="Citations" class="tabcontent">
+<article>
+	<h1>Citations</h1>
+	<p><b>Code:</b></p> 
+	
+	<p>W3Schools. "HTML: The Language for Web Building." 
+	<i>W3Schools.com: The World's Largest Web Developer Site.</i> 
+	(accessed 2018 Nov 30). <a href ="https://www.w3schools.com/">https://www.w3schools.com</a> </p>
+	
+	<p><b>Information:</b></p>
+	
+	<p>Britannica Editors. “Indian Literature.” <i>Encyclopædia Britannica.</i> 2016 May 4 [accessed 2018 Nov 30].
+	<a href = "https://www.britannica.com/art/Indian-literature">https://www.britannica.com/art/Indian-literature</a></p>
+	<p>Morson GS. “Russian Literature.” <i>Encyclopædia Britannica.</i> 2017 May 12 [accessed 2018 Nov 30]. 
+	<a href = "https://www.britannica.com/art/Russian-literature">https://www.britannica.com/art/Russian-literature</a></p>
+	
+	<p>Pole, JR. “United States Cultural Life.” <i>Encyclopædia Britannica.</i> 2018 November 25 [accessed 2018 Nov 
+	30]. <a href = "https://www.britannica.com/art/United-States-cultural-life">https://www.britannica.com/art/United-States-cultural-life</a></p>
+	
+	<p>Ryan, Judith. “German Literature.” <i>Encyclopædia Britannica.</i> 2015 May 7 [accessed 2018 Nov 30]. 
+	<a href = "https://www.britannica.com/art/German-literature">https://www.britannica.com/art/German-literature</a></p>
+
+	<p>Smethurst, Colin. “French Literature.” Encyclopædia Britannica. 2016 July 21 [accessed 2018 Nov 30]. 
+	<a href = "https://www.britannica.com/art/French-literature">https://www.britannica.com/art/French-literature</a></p>
+
+</article>
+</div>
+
+	
+</article>
+</div>	
 <footer>
 	<h6>IT105 Summirative Presentation</h6>
 </footer>	
 
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, TabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -193,7 +225,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(TabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 </script>
@@ -202,3 +234,5 @@ function openCity(evt, cityName) {
 
 </body>
 </html>
+
+
